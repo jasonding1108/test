@@ -3,7 +3,15 @@
 
 import random 
 
-r = random.randint(1, 100)
+
+min_value = input('please assign min. value:')
+max_value = input('please assign max. value:')
+
+min_value = int(min_value)
+max_value = int(max_value)
+
+
+r = random.randint(min_value, max_value)
 count = 0
 while True:
 	count += 1 # count = count + 1
