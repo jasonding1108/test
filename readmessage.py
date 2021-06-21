@@ -41,4 +41,22 @@ for d in data:
 print('mention good in the message:', len(good))
 print(good[0])
 
+#篩選留言裡有'good'字眼
+#快寫法:
+good = [d for d in data if 'good' in d]
+print('mention good in the message:', len(good))
+print(good[0])
+
+#-------------------------
+#'bad'有沒有在留言裡, 如果有就會是True, 沒有就是False
+bad = []
+for d in data:
+	bad.append('bad' in d)
+print(bad)
+
+#快寫法:
+bad = ['bad' in d for d in data]  
+print(bad)
+
+
 
