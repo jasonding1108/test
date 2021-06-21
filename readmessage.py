@@ -32,3 +32,13 @@ for d in data:
 print('the number of message length < 100:', len(new))
 print(new[0])
 print(new[1])
+
+#篩選留言裡有'good'字眼
+good = []
+for d in data:
+	if 'good' in d:
+		good.append(d)
+print('mention good in the message:', len(good))
+print(good[0])
+
+
